@@ -1,24 +1,6 @@
 Copyright 2015 Jonathan Bowman
 
-For the purposes of licensing, the content of this project is divided
-into two categories:
-
-1. Code* and related documentation, including both standalone documentation
-   and documentation embedded in code, as well as sample code embedded in
-   non-code documents.
-2. All other non-code content.
-
-All code and related documentation (#1 above), unless otherwise noted, is
-licensed under the Apache License, Version 2.0 (see full text below).
-
-All other content (#2 above), unless otherwise noted, is licensed under
-the Creative Commons Attribution-ShareAlike 4.0 International License.
-To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
-Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-
-* "code" refers to any programming instructions, including but not limited
-  to that written in Javascript, Go, Python, and shell scripting.
+All content of this project, including but not limited to software, blog entries, web pages, and sample code, is licensed under the Apache License, Version 2.0 (full text follows).
 
 ===============================
 Apache License
