@@ -1,6 +1,6 @@
 public
 static/assets/bundle.js
-static/assets/main.js
+static/assets/main.css
 *.orig
 *~
 *.swp

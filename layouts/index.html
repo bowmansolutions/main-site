@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+
+{{ range $section, $pages := .Site.Sections }}
+<p><a href="{{ $section | relURL}}">{{ replace $section "-" " " | title }}</a></p>
+{{ end }}
+        
+{{ partial "footer.html" . }}
