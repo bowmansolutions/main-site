@@ -10,7 +10,7 @@ HTTP_SERVER = hugo server -Dw
 GENERATE_CMD = hugo
 
 # target file for bundled Javascript
-JS_TARGET = public/assets/bundle.js
+JS_TARGET = static/assets/bundle.js
 
 # Source directory
 SRC_DIR = src
@@ -38,7 +38,7 @@ BUNDLE_JS_CMD = browserify $(MAIN_JS) | $(MINIFY_JS_CMD)
 WATCH_JS_CMD = watchify $(MAIN_JS) -o "$(MINIFY_JS_CMD)" -v
 
 # target css file (Sass compiler output)
-CSS_TARGET = public/assets/main.css
+CSS_TARGET = static/assets/main.css
 
 # directory in which Sass files reside (to be compiled)
 SASS_DIR = $(SRC_DIR)/sass

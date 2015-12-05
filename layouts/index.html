@@ -2,6 +2,7 @@
 
 {{ range $section, $pages := .Site.Sections }}
 <p><a href="{{ $section | relURL}}">{{ replace $section "-" " " | title }}</a></p>
+<p>{{ $.Site.Data.sections.electronics.summary }}</p>
 {{ end }}
         
 {{ partial "footer.html" . }}
