@@ -1,5 +1,5 @@
 baseurl = "https://bowmansolutions.com/"
-copyright = "Copyright 2015 Jonathan Bowman. All documentation and code contained on this site may be freely shared in compliance with [the Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0), and is **provided \"AS IS\" without warranties or conditions of any kind**."
+copyright = "Copyright 2015 Jonathan Bowman. All documentation or code contained on this site may be freely shared in compliance with [the Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0), and is **provided \"AS IS\" without warranties or conditions of any kind**."
 languageCode = "en-us"
 title = "Bowman Solutions"
 pluralizeListTitles = false
@@ -7,5 +7,6 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  description = "Website for Bowman Solutions"
+  description = "Main web site for Bowman Solutions, providing resources for electronics hobbyists, web programmers, and software developers"
+  slogan = "Personal attention.<br>Diverse technologies."
   author = "Jonathan Bowman"

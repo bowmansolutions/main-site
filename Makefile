@@ -45,7 +45,7 @@ SASS_DIR = $(SRC_DIR)/sass
 
 # Command for compiling (and minifying if desired) Sass to CSS.
 # Default uses Wellington: http://getwt.io/
-SASS_CMD = wt compile --comment=false $(MAIN_SASS) | minify -x .css -o $(CSS_TARGET)
+SASS_CMD = wt compile --comment=false $(MAIN_SASS) | minify -x .css > $(CSS_TARGET)
 
 # Sass file to be passed to compiler (may import other Sass and CSS)
 MAIN_SASS = $(SASS_DIR)/main.scss

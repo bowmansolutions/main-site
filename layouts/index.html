@@ -1,8 +1,35 @@
 {{ partial "header.html" . }}
 
-{{ range $section, $pages := .Site.Sections }}
-<p><a href="{{ $section | relURL}}">{{ replace $section "-" " " | title }}</a></p>
-<p>{{ $.Site.Data.sections.electronics.summary }}</p>
-{{ end }}
-        
+<div class="pure-menu pure-menu-horizontal">
+    <!--a href="#" class="pure-menu-heading">Your Logo</a-->
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+    </ul>
+</div>
+
+<div class="banner textured-bg">
+    <h1 class="banner__title">
+      {{ .Title }}
+    </h1>
+    <h2 class="banner__slogan">
+      {{ .Site.Params.slogan | safeHTML }}
+    </h2>
+</div>
+
+<div class="max-width pure-g">
+  {{ range $section, $pages := .Site.Sections }}
+    {{ with $section }}
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="link-container">
+          <a class="pure-button button button__link1" href="{{ . | relURL}}">{{ replace . "-" " " | title }}</a>
+          {{ $sectiondata := index $.Site.Data.sections . }}
+          <p>{{ $sectiondata.summary }}</p>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+
 {{ partial "footer.html" . }}
