@@ -2,13 +2,18 @@
 //  Import "Pure" Components 
 // ------------------------------------------------------------------
 
-@import 'pure/base',
-        'pure/buttons',
-        //'pure/forms',
-        'pure/grids',
-        'pure/grids-responsive',
-        'pure/menus';
-        //'pure/tables';
+//@import 'pure/base',
+//        'pure/buttons',
+//        //'pure/forms',
+//        'pure/grids',
+//        'pure/grids-responsive',
+//        'pure/menus';
+//        //'pure/tables';
+
+@import 'base',
+        'grid',
+        'layout',
+        'skin';
 
 @import 'syntax-highlighting';
 
@@ -16,17 +21,6 @@
 // ------------------------------------------------------------------
 //  Custom
 // ------------------------------------------------------------------
-
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.textured-bg {
-  /* Background pattern from subtlepatterns.com */
-  background: url('/frozen/escheresque_ste.png');
-}
 
 .banner {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -51,41 +45,9 @@ body, html {
   color: white;
   border-radius: 5px;
   font-size: 110%;
+  padding: 5px;
   &__link1 {
     background: #f63;
   }
 }
 
-.fine-print {
-  font-size: 80%;
-}
-
-.link-container {
-  background: #eeeeee;
-  border-radius: 10px;
-  margin: 0.5em;
-  padding: 0.5em;
-  text-align: center;
-}
-
-.max-width {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.footer {
-  border-top: 1px solid #cccccc;
-  position: absolute;
-  height: 100px;
-  bottom: 0px;
-  padding: .5em;
-}
-
-.content {
-  padding: 0 0 100px 0;
-}

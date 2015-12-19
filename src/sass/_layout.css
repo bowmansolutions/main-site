@@ -1,0 +1,21 @@
+.content {
+  padding: 0 0 100px 0;
+}
+
+.footer {
+  border-top: 1px solid #cccccc;
+  position: absolute;
+  height: 100px;
+  bottom: 0px;
+  padding: .5em;
+}
+
+.max-width {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}

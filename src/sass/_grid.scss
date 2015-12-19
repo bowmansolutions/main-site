@@ -1,0 +1,40 @@
+// Adapted from http://mincss.com/ by Owen Versteeg
+.block-group {
+  margin: 1% 0;
+  overflow: auto; // needed for proper formed layout
+}
+
+.block {
+  float: left;
+}
+
+.b12 {
+  width: 100%;
+}
+
+$block-list: (
+  b1    8.33%,
+  b2   16.66%,
+  b3   25%,
+  b4   33.33%,
+  b5   41.66%,
+  b6   50%,
+  b7   58.33%,
+  b8   66.66%,
+  b9   75%,
+  b10  83.33%,
+  b11  91.66%
+);
+
+@each $value in $block-list {
+  .#{nth($value, 1)} {
+    width: nth($value, 2);
+  }
+}
+
+@media (max-width:870px) {
+  .block-group .block {
+    width: 100%;
+  }
+}
+

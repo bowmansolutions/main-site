@@ -18,11 +18,11 @@
     </h2>
 </div>
 
-<div class="max-width pure-g">
+<div class="max-width block-group">
   {{ range $section, $pages := .Site.Sections }}
     {{ with $section }}
-      <div class="pure-u-1 pure-u-md-1-3">
-        <div class="link-container">
+      <div class="b6 block">
+        <div class="round-box">
           <a class="pure-button button button__link1" href="{{ . | relURL}}">{{ replace . "-" " " | title }}</a>
           {{ $sectiondata := index $.Site.Data.sections . }}
           <p>{{ $sectiondata.summary }}</p>

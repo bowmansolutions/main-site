@@ -1,0 +1,18 @@
+.fine-print {
+  font-size: 80%;
+}
+
+.textured-bg {
+  /* Background pattern from subtlepatterns.com */
+  background: url('/frozen/escheresque_ste.png');
+}
+
+.round-box {
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 0.5em;
+  min-height: 6em;
+  padding: 0.75em;
+  text-align: center;
+}
+
