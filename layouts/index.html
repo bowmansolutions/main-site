@@ -21,7 +21,7 @@
 <div class="max-width block-group">
   {{ range $section, $pages := .Site.Sections }}
     {{ with $section }}
-      <div class="b6 block">
+      <div class="b4 block">
         <div class="round-box">
           <a class="pure-button button button__link1" href="{{ . | relURL}}">{{ replace . "-" " " | title }}</a>
           {{ $sectiondata := index $.Site.Data.sections . }}

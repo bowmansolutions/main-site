@@ -1,3 +1,13 @@
+.button {
+  color: white;
+  border-radius: 5px;
+  font-size: 110%;
+  padding: .3em .5em;
+  &__link1 {
+    background: #f63;
+  }
+}
+
 .fine-print {
   font-size: 80%;
 }
@@ -12,7 +22,7 @@
   border-radius: 10px;
   margin: 0.5em;
   min-height: 6em;
-  padding: 0.75em;
+  padding: 1.3em .5em .5em .5em;
   text-align: center;
 }
 
