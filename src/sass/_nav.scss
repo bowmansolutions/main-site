@@ -1,0 +1,80 @@
+//$nav-bg: #313131; 
+//$nav-bg: #262626; 
+%nav-global {
+  color: #ffffff;
+}
+
+.nav {
+  @extend %nav-global;
+  height: 1.5em;
+  padding: .5em 0 .5em;
+  max-height: 1.5em;
+
+  &__link {
+    color: #bbbbbb;
+    padding: 0 1em 0 0;
+    position: relative;
+
+    &:hover {
+      @extend %nav-global;
+    }
+  }
+
+  &__pagename {
+    font-size: 1.4em;
+    top: .1em;
+  }
+
+  &__current {
+    @extend %nav-global;
+  }
+}
+
+.nav__close-btn {
+  display: none;
+  float: right;
+  font-size: 1.4em;
+  margin-top: -1.5em;
+}
+
+@media(max-width:500px) {
+  .nav__close-btn {
+    display: block;
+  }
+
+  .nav {
+    overflow: hidden;
+    transition: max-height .4s ease-in-out, height .4s ease-in-out;
+
+    &:focus {
+      //height: auto;
+      // -- Necessary for animations
+      height: 100%;
+      max-height: 500px;
+    }
+
+    &__container:before {
+      //background: $nav-bg;
+      border-top: 3px solid;
+      border-bottom: 10px double;
+      content: '';
+      float: right;
+      height: 4px;
+      position: relative;
+      right: 3px;
+      top: 14px;
+      width: 20px;
+    }
+
+    &__link {
+      display: block;
+      padding: .5em 0;
+      width: 50%;
+    }
+    &__pagename {
+      margin-top: -11px;
+    }
+  }
+
+}
+
