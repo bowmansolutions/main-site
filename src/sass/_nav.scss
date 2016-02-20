@@ -38,17 +38,11 @@
 }
 
 @media(max-width:500px) {
-  .nav__close-btn {
-    display: block;
-  }
-
   .nav {
     overflow: hidden;
     transition: max-height .4s ease-in-out, height .4s ease-in-out;
 
-    &:focus {
-      //height: auto;
-      // -- Necessary for animations
+    &__expanded {
       height: 100%;
       max-height: 500px;
     }
